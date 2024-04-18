@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="styles.css">
+    <title>Trial Page </title>
+</head>
+    <body>
+            <header>Trial Page for Vanilla</header> 
+            <h1>Guessing Game</h1>
+
+            <div>
+                Click here to get started <button onclick="onOpen()">Open</button>
+            </div>
+            <span id="subscription">
+                <form id="subscription">
+                <element>First Name:<input id="firstName" placeholder="First Name" required></element>
+                <elemt>Last Name: <input id="lastName" placeholder="Last Name" required></elemt>
+                <element>Email: <input id="email" placeholder="email address" required></element>
+                <button id="formButton" onclick="">submit</button> 
+                <div><button onclick="onClose()">Close</button></div>
+                </form>
+            </span>
+
+            <span id="guessGame">
+                <form onsubmit="return guess()" method="get">
+                <fieldset class="guessField">
+                    <legend>Guess Game</legend>
+                        <label for="myInput">
+                        Pick a number 1 - 10
+                        </label>
+                        <input id="myInput" placeholder="Put your guess here" type="number" min="0" max="10" value="0">
+                        <button id="guessButton" onclick="guess()">Submit</button>
+                        <div id="output" onclick=""></div>
+                        <div id="result">Results will be displayed here...</div>
+                        <div id="message">
+                            Let us begin our guessing game.
+                        </div>
+                </fieldset>
+                </form>
+            </span>
+        <script src="index.js"></script>
+    </body>
+</html>
