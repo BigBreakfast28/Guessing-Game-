@@ -9,7 +9,19 @@ body {
 
 }
 
-.guessField {
-    width: 15%;
+
+
+.activity {
+    display: flex;
+    padding-top: 15px;
+    
 }
 
+#game1 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.guessField {
+  height: 115px;
+}

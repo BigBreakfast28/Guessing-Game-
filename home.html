@@ -14,7 +14,7 @@
                 Click here to get started <button onclick="onOpen()">Open</button>
             </div>
             <span id="subscription">
-                <form id="subscription">
+                <form id="subscription" class="activity">
                 <element>First Name:<input id="firstName" placeholder="First Name" required></element>
                 <elemt>Last Name: <input id="lastName" placeholder="Last Name" required></elemt>
                 <element>Email: <input id="email" placeholder="email address" required></element>
@@ -22,8 +22,8 @@
                 <div><button onclick="onClose()">Close</button></div>
                 </form>
             </span>
-
-            <span id="guessGame">
+            <div class="activity">
+            <span id="game1">
                 <form onsubmit="return guess()" method="get">
                 <fieldset class="guessField">
                     <legend>Guess Game</legend>
@@ -40,6 +40,23 @@
                 </fieldset>
                 </form>
             </span>
+            <div id="game2">
+                <form class="RPS" >
+                    <fieldset >
+                        <p>Select an option: </p>
+                        <legend>Rock Paper Scissors</legend>
+                        <input>
+                        <select>
+                            <option>Rock</option>
+                            <option>Paper</option>
+                            <option>Scissors</option>
+                        </select>
+                        <button class="btnGame2" onclick="">Submit</button>
+                        <div class="answerGame2"></div>
+                    </fieldset>
+                </form>
+            </div>
+            </div>
         <script src="index.js"></script>
     </body>
 </html>
